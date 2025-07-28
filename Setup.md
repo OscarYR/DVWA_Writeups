@@ -110,4 +110,4 @@ After completing the first two challenges using DVWA inside Metasploitable 2, I 
 - It should load the setup.php page, click on Create/Reset Database
 - login.php page is then loaded, and we can proceed to login
 
-
+> **Note**: If you have problem installing DVWA or instructions are not clear enough, feel free to check out the video link and official DVWA repository in the **Resources** section at the very top of this page.
