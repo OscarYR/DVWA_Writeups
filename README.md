@@ -1,19 +1,44 @@
-# DVWA_Writeups
-# DVWA Command Injection Write-Up
+# DVWA Web Application Write-Ups
 
-## 🔍 Target
-- **DVWA** – Command Injection module
-- Hosted on **Metasploitable2**
+This repository contains a series of write-ups for [DVWA (Damn Vulnerable Web Application)](https://github.com/digininja/DVWA), a purposefully insecure web application used to practice and learn various web security vulnerabilities.
 
-## 🧰 Tools Used
-- Kali Linux
-- Burp Suite
-- Firefox
+These walkthroughs were done in a lab environment using:
+- 🖥️ **Attacker**: Kali Linux
+- 🧪 **Victim**: DVWA in Metasploitable 2
+- 🔧 **Tools**: Burp Suite, Hydra, curl, Firefox Developer Tools
 
-## 🎯 Objective
-Identify and exploit a command injection vulnerability in DVWA’s web interface.
+---
 
-## 🪜 Steps Taken
-1. Navigated to the Command Injection module.
-2. Entered IP and added `; ls` to observe injection.
-3. Verified response on the web page.
+## 💡 Covered Vulnerabilities
+
+Each folder contains:
+- Step-by-step exploitation
+- Tool usage (Burp Suite, manual, etc.)
+- Screenshots (if applicable)
+- Observations across **Low**, **Medium**, and **High** difficulty levels
+- Skills and techniques learned
+
+### 📁 Write-Ups So Far
+| Module         | Difficulty | Status  |
+|----------------|------------|---------|
+| [Brute Force](./Brute-Force/Brute_Force.md) | Low / Medium / High | ✅ Completed |
+| SQL Injection  | TBA        | ⏳ In Progress |
+| XSS            | TBA        | ⏳ In Progress |
+| File Inclusion | TBA        | ⏳ In Progress |
+
+---
+
+## 🧠 Skills Learned
+
+- Web vulnerability identification and exploitation
+- Use of **Burp Suite Intruder** for brute forcing
+- Analysis of HTTP request/response lengths and keyword patterns
+- Credential harvesting through response analysis
+- Understanding impact of difficulty levels (filtering, delays, etc.)
+
+---
+
+## 📌 Notes
+
+- All activities were performed in a **safe lab environment**
+- Educational purposes only
