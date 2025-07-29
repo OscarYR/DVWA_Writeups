@@ -1,6 +1,9 @@
 # Brute Force
 
 Brute force attack is a hacking method that uses trial and error to crack passwords, login credentials, or encryption keys. It can be automated using password cracking tools such as hydra and John the Ripper that comes with different wordlists and customizable options, making the cracking process faster and easier.
+<br><br>
+
+---
 
 ## Low Difficulty
 
@@ -65,6 +68,8 @@ After spending some time brute forcing, we manage to find the password for smith
 
 <img src="./Screenshots/Screenshot22.png" width=80% height=80%><br><br>
 
+---
+
 ## Medium Difficulty
 
 > **Note**: The attack method used for both Medium and High difficulty is the same as Low difficulty. Only minimal changes are made on the backend (e.g., input sanitization and artificial delays), which do not prevent the attack — they merely slow it down. Therefore, I will not repeat screenshots or tool setup steps for these levels.
@@ -86,12 +91,15 @@ So the Burp Suite Intruder sees a consistent pattern:
 ### Medium
 <img src="./Screenshots/Screenshot24.png" width=80% height=80%><br><br>
 
+---
 
 ## High Difficulty
 
 The high difficulty not only further enhances the SQL injection protection by adding the ‘stripslashes()’ but also introduces brute force protection using the sleep(3) delay. It will add a 3 second delay on failed login attempts, which greatly slowing down the attacks. However, this is still considered insecure as what it does is just only slowing down instead of blocking the attack. Thus, in high difficulty, the credentials still can be brute forced but it will cost a lot of time. 
 
 <img src="./Screenshots/Screenshot25.png" width=80% height=80%><br><br>
+
+---
 
 ## Conclusion
 
