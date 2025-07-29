@@ -120,8 +120,7 @@ Bypass Attempts like Newline Injection (%0a) Fail:
 This challenge demonstrates how **unsanitized user input** in system-level commands can lead to command injection vulnerabilities. By leveraging various shell operators (`;`, `&&`, `|`, `&`), we were able to manipulate the server to execute arbitrary commands in **Low** and **Medium** difficulties.
 
 While the **High** difficulty level blocks traditional payloads through strict input validation and reconstruction, this is a good reminder of how secure input handling and avoiding direct shell command usage is crucial in real-world applications.
-
----
+<br><br>
 
 ### Skills Applied:
 - Identifying and exploiting command injection vulnerabilities
