@@ -30,6 +30,7 @@ The action the attacker wants to perform (such as transferring funds, changing e
   
 3.	Absence of CSRF protection mechanisms: The target web application must not have security measures in place (like anti-CSRF tokens) to validate that the request is legitimate.
 <br><br>
+---
 
 ## Low Difficulty
 
@@ -63,8 +64,8 @@ The password has been successfully changed by just modifying the request link to
 
 <img src="./Screenshots/Screenshot7.png" width=80% height=80%><br><br>
 
-In terms of real world scenario, an attacker will craft this link and use social engineering to send the email for tricking victim into clicking on the link, the password will then be changed without the victim realizing it.
-<br><br>
+> Tips: In terms of real world scenario, an attacker will craft this link and use social engineering to send the email for tricking victim into clicking on the link, the password will then be changed without the victim realizing it.
+---
 
 ## Medium Difficulty
 
@@ -136,6 +137,8 @@ When we test the credentials, the `password` is not working now, instead, the ne
 
 <img src="./Screenshots/Screenshot17.png" width=80% height=80%><br><br>
 
+---
+
 ## High Difficulty
 
 ### Analyze Password Chaning Request
@@ -200,6 +203,8 @@ We can then add the command into the img src script:
 We are now successfully changed the password back to ‘password’ using this method:
 
 <img src="./Screenshots/Screenshot26.png" width=80% height=80%><br><br>
+
+---
 
 ## Conclusion
 
