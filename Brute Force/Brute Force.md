@@ -89,4 +89,15 @@ So the Burp Suite Intruder sees a consistent pattern:
 
 The high difficulty not only further enhances the SQL injection protection by adding the ‘stripslashes()’ but also introduces brute force protection using the sleep(3) delay. It will add a 3 second delay on failed login attempts, which greatly slowing down the attacks. However, this is still considered insecure as what it does is just only slowing down instead of blocking the attack. Thus, in high difficulty, the credentials still can be brute forced but it will cost a lot of time. 
 
-<img src="./Screenshots/Screenshot25.png" width=80% height=80%>
+<img src="./Screenshots/Screenshot25.png" width=80% height=80%><br><br>
+
+## Conclusion
+
+This challenge demonstrates how brute force attacks can exploit weak authentication systems using tools like **Burp Suite Intruder**. Even though DVWA increases its difficulty from Low to High, the underlying logic remains vulnerable due to poor brute force protection.
+
+### Skills Applied:
+- HTTP request/response analysis
+- Burp Suite Intruder configuration
+- Response length and keyword pattern recognition
+- Wordlist-based credential enumeration
+- Adapting attack methods to bypass weak protections
