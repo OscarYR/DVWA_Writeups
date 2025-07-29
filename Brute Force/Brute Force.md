@@ -104,6 +104,7 @@ The high difficulty not only further enhances the SQL injection protection by ad
 ## Conclusion
 
 This challenge demonstrates how brute force attacks can exploit weak authentication systems using tools like **Burp Suite Intruder**. Even though DVWA increases its difficulty from Low to High, the underlying logic remains vulnerable due to poor brute force protection.
+<br><br>
 
 ### Skills Applied:
 - HTTP request/response analysis
