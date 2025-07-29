@@ -1,7 +1,7 @@
 # Licensing
 
 ## 📄 Write-ups
-All `.md` files inside the challenge folders (e.g. `Brute-Force/Brute_Force.md`) are licensed under:
+All `.md` files inside the challenge folders (e.g. `Brute Force/Brute Force.md`) are licensed under:
 
 **Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)**  
 https://creativecommons.org/licenses/by-nc/4.0/
