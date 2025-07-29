@@ -19,9 +19,9 @@ Each folder contains:
 - Skills and techniques learned
 
 ### 📁 Write-Ups So Far
-| Module         | Difficulty | Status  |
+| Challenges        | Difficulty | Status  |
 |----------------|------------|---------|
-| [Brute Force](./Brute-Force/Brute_Force.md) | Low / Medium / High | ✅ Completed |
+| [Brute Force](./Brute%20Force/Brute%20Force.md) | Low / Medium / High | ✅ Completed |
 | SQL Injection  | TBA        | ⏳ In Progress |
 | XSS            | TBA        | ⏳ In Progress |
 | File Inclusion | TBA        | ⏳ In Progress |
