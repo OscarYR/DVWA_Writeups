@@ -2,6 +2,8 @@
 
 Command execution occurs when a web application has the vulnerability of allowing attackers to run system level command on the web servers. It passes user input directly to the system shell due to improper validation or sanitization.
 
+---
+
 ## Low Difficulty
 
 ### Ping Command
@@ -44,6 +46,9 @@ If we apply this to the DVWA, the results are as below:
 <img src="./Screenshots/Screenshot7.png" width=80% height=80%><br><br>
 
 The vulnerability allows us to run several commands after using the shell operators to enumerate the system information.
+<br><br>
+
+---
 
 ## Medium Difficulty
 
@@ -70,6 +75,8 @@ What if we try other operators like `|` (Pipe) and `&`? The pipe operator will s
 After testing, we can use the `|` and `&` operators to execute the command. If we look at the source code, it has blacklisted the `;` and `&&` operators, that’s why we were unable to run the command on the first try. Hence, operators other than the two blacklisted can be used to inject command:
 
 <img src="./Screenshots/Screenshot12.png" width=80% height=80%><br><br>
+
+---
 
 ## High Difficulty
 
@@ -105,6 +112,8 @@ Bypass Attempts like Newline Injection (%0a) Fail:
 - Shell metacharacters or encoded characters are not preserved after the validation and reconstruction process.
 
 > **Note**: This level can't be solved because the DVWA hosting on Metasploitable2 was an old version, it can later be solved when the code was redesigned for the newer version (direct download from GitHub and host on local machine).
+
+---
 
 ## Conclusion
 
