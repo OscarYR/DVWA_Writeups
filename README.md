@@ -22,7 +22,7 @@ Each folder contains:
 | Challenges        | Difficulty | Status  |
 |----------------|------------|---------|
 | [Brute Force](./Brute%20Force/Brute%20Force.md) | Low / Medium / High | ✅ Completed |
-| SQL Injection  | TBA        | ⏳ In Progress |
+| [Command Execution](./Command%20Execution/Command%20Execution.md)  | Low / Medium / High | ✅ Completed |
 | XSS            | TBA        | ⏳ In Progress |
 | File Inclusion | TBA        | ⏳ In Progress |
 
