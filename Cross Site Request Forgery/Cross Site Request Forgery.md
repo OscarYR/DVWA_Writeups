@@ -215,8 +215,7 @@ At **Low** difficulty, we demonstrated a successful password change via a simple
 At **Medium** difficulty, **Referer header validation** blocked the attack unless it originated from the same site. We bypassed this defense by combining CSRF with **Stored XSS**, allowing malicious JavaScript to run within the application's context and mimic a legitimate request.
 
 At **High** difficulty, the system implemented **CSRF tokens**, which randomly generated and unique per request. However, due to the presence of XSS, we extracted the token using DOM manipulation and successfully forged a valid request. This highlights the real-world danger of combining **multiple vulnerabilities**, and why XSS must be eliminated even when CSRF protections are in place.
-
----
+<br><br>
 
 ### Skills Applied:
 
