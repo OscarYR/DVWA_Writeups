@@ -26,6 +26,7 @@ Each folder contains:
 | [Cross Site Request Forgery](./Cross%20Site%20Request%20Forgery/Cross%20Site%20Request%20Forgery.md)            | Low / Medium / High | ✅ Completed |
 | [File Inclusion](./File%20Inclusion/File%20Inclusion.md) | Low / Medium / High | ✅ Completed |
 | [File Upload](./File%20Upload/File%20Upload.md) | Low / Medium / High |  ✅ Completed |
+| [Insecure CAPTCHA](./Insecure%20CAPTCHA/Insecure%20CAPTCHA.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
