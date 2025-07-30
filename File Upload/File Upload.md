@@ -235,6 +235,5 @@ These techniques are commonly used by attackers in real-world web attacks and hi
 - Burp Suite request manipulation
 - MIME-type header bypass techniques
 - Basic binary manipulation using **hex editors**
-- Exploiting image libraries' validation assumptions
 - Metadata injection via **ExifTool**
 - Combining **File Upload + File Inclusion** vulnerabilities
