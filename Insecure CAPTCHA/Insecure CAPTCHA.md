@@ -1,6 +1,8 @@
 # Insecure CAPTCHA
 
 When we try to login or signup on a website, we often get a little "test" of choosing specific images to match the provide keyword or type out the distorted text at the bottom of web registration forms. This little test is called CAPTCHA and it is to determine if a user is a human or computer. CAPTCHAs are used by many websites to prevent abuse from "bots", or automated programs usually written to generate spam. No computer program can read distorted text as well as humans can, so bots cannot navigate sites protected by CAPTCHAs.
+
+An insecure CAPTCHA can undermine the very protection it’s meant to provide. If the CAPTCHA validation is poorly implemented, such as relying on client-side checks, using predictable tokens, or exposing bypass mechanisms in source code, automated bots and attackers can easily bypass it. This opens the door to brute force attacks, spam submissions, and unauthorized actions, rendering the CAPTCHA functionally useless.
 <br><br>
 
 ## Setup
