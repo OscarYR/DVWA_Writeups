@@ -22,12 +22,12 @@ Each folder contains:
 | Challenges        | Difficulty | Status  |
 |----------------|------------|---------|
 | [Brute Force](./1.%20Brute%20Force/Brute%20Force.md) | Low / Medium / High | ✅ Completed |
-| [Command Execution](./Command%20Execution/Command%20Execution.md)  | Low / Medium / High | ✅ Completed |
-| [Cross Site Request Forgery](./Cross%20Site%20Request%20Forgery/Cross%20Site%20Request%20Forgery.md)            | Low / Medium / High | ✅ Completed |
-| [File Inclusion](./File%20Inclusion/File%20Inclusion.md) | Low / Medium / High | ✅ Completed |
-| [File Upload](./File%20Upload/File%20Upload.md) | Low / Medium / High |  ✅ Completed |
-| [Insecure CAPTCHA](./Insecure%20CAPTCHA/Insecure%20CAPTCHA.md) | Low / Medium / High |  ✅ Completed |
-| [SQL Injection](./SQL%20Injection/SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
+| [Command Execution](./2.%20Command%20Execution/Command%20Execution.md)  | Low / Medium / High | ✅ Completed |
+| [Cross Site Request Forgery](./3.%20Cross%20Site%20Request%20Forgery/Cross%20Site%20Request%20Forgery.md)            | Low / Medium / High | ✅ Completed |
+| [File Inclusion](./4.%20File%20Inclusion/File%20Inclusion.md) | Low / Medium / High | ✅ Completed |
+| [File Upload](./5.%20File%20Upload/File%20Upload.md) | Low / Medium / High |  ✅ Completed |
+| [Insecure CAPTCHA](./6.%20Insecure%20CAPTCHA/Insecure%20CAPTCHA.md) | Low / Medium / High |  ✅ Completed |
+| [SQL Injection](./7.%20SQL%20Injection/SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
