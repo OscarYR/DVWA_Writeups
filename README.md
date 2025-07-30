@@ -27,6 +27,7 @@ Each folder contains:
 | [File Inclusion](./File%20Inclusion/File%20Inclusion.md) | Low / Medium / High | ✅ Completed |
 | [File Upload](./File%20Upload/File%20Upload.md) | Low / Medium / High |  ✅ Completed |
 | [Insecure CAPTCHA](./Insecure%20CAPTCHA/Insecure%20CAPTCHA.md) | Low / Medium / High |  ✅ Completed |
+| [SQL Injection](./SQL%20Injection/SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
