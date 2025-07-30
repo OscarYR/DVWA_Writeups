@@ -21,7 +21,7 @@ Each folder contains:
 ### 📁 Write-Ups So Far
 | Challenges        | Difficulty | Status  |
 |----------------|------------|---------|
-| [Brute Force](./Brute%20Force/Brute%20Force.md) | Low / Medium / High | ✅ Completed |
+| [Brute Force](./1.%20Brute%20Force/Brute%20Force.md) | Low / Medium / High | ✅ Completed |
 | [Command Execution](./Command%20Execution/Command%20Execution.md)  | Low / Medium / High | ✅ Completed |
 | [Cross Site Request Forgery](./Cross%20Site%20Request%20Forgery/Cross%20Site%20Request%20Forgery.md)            | Low / Medium / High | ✅ Completed |
 | [File Inclusion](./File%20Inclusion/File%20Inclusion.md) | Low / Medium / High | ✅ Completed |
