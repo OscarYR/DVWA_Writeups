@@ -24,7 +24,8 @@ Each folder contains:
 | [Brute Force](./Brute%20Force/Brute%20Force.md) | Low / Medium / High | ✅ Completed |
 | [Command Execution](./Command%20Execution/Command%20Execution.md)  | Low / Medium / High | ✅ Completed |
 | [Cross Site Request Forgery](./Cross%20Site%20Request%20Forgery/Cross%20Site%20Request%20Forgery.md)            | Low / Medium / High | ✅ Completed |
-| File Inclusion | TBA        | ⏳ In Progress |
+| [File Inclusion](./File%20Inclusion/File%20Inclusion.md) | Low / Medium / High | ✅ Completed |
+| [File Upload](./File%20Upload/File%20Upload.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
