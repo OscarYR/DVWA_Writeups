@@ -2,6 +2,8 @@
 
 SQL Injection is a type of security vulnerability that allows attackers to interfere with the queries that an application makes to its database. It occurs when an application uses user input to construct SQL queries without proper validation or sanitization. If the input is not sanitized, malicious users can manipulate the query, potentially gaining unauthorized access to the database, retrieving sensitive data, or even altering or deleting data. This attack can also be called as **‘SQLi’**.
 
+---
+
 ## Low Difficulty
 
 ### Analyzing Source Code
@@ -38,6 +40,8 @@ If we insert the `' UNION SELECT user, password FROM users#` for the input, the 
 With all the password hashes have been returned, we can use tools like `hashid` to check the possible algorithms and crack them:
 
 <img src="./Screenshots/Screenshot7.png" width=80% height=80%><br><br>
+
+---
 
 ## Medium Difficulty
 
