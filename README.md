@@ -29,6 +29,7 @@ Each folder contains:
 | [Insecure CAPTCHA](./6.%20Insecure%20CAPTCHA/Insecure%20CAPTCHA.md) | Low / Medium / High |  ✅ Completed |
 | [SQL Injection](./7.%20SQL%20Injection/SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
 | [Blind SQL Injection](./8.%20Blind%20SQL%20Injection/Blind%20SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
+| [Weak Session IDs](./9.%20Weak%20Session%20IDs/Weak%20Session%20IDs.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
