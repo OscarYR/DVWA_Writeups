@@ -21,15 +21,15 @@ Each folder contains:
 ### 📁 Write-Ups So Far
 | Challenges        | Difficulty | Status  |
 |----------------|------------|---------|
-| [Brute Force](./1.%20Brute%20Force/Brute%20Force.md) | Low / Medium / High | ✅ Completed |
-| [Command Execution](./2.%20Command%20Execution/Command%20Execution.md)  | Low / Medium / High | ✅ Completed |
-| [Cross Site Request Forgery](./3.%20Cross%20Site%20Request%20Forgery/Cross%20Site%20Request%20Forgery.md)            | Low / Medium / High | ✅ Completed |
-| [File Inclusion](./4.%20File%20Inclusion/File%20Inclusion.md) | Low / Medium / High | ✅ Completed |
-| [File Upload](./5.%20File%20Upload/File%20Upload.md) | Low / Medium / High |  ✅ Completed |
-| [Insecure CAPTCHA](./6.%20Insecure%20CAPTCHA/Insecure%20CAPTCHA.md) | Low / Medium / High |  ✅ Completed |
-| [SQL Injection](./7.%20SQL%20Injection/SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
-| [Blind SQL Injection](./8.%20Blind%20SQL%20Injection/Blind%20SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
-| [Weak Session IDs](./9.%20Weak%20Session%20IDs/Weak%20Session%20IDs.md) | Low / Medium / High |  ✅ Completed |
+| [Brute Force](./01.%20Brute%20Force/Brute%20Force.md) | Low / Medium / High | ✅ Completed |
+| [Command Execution](./02.%20Command%20Execution/Command%20Execution.md)  | Low / Medium / High | ✅ Completed |
+| [Cross Site Request Forgery](./03.%20Cross%20Site%20Request%20Forgery/Cross%20Site%20Request%20Forgery.md)            | Low / Medium / High | ✅ Completed |
+| [File Inclusion](./04.%20File%20Inclusion/File%20Inclusion.md) | Low / Medium / High | ✅ Completed |
+| [File Upload](./05.%20File%20Upload/File%20Upload.md) | Low / Medium / High |  ✅ Completed |
+| [Insecure CAPTCHA](./06.%20Insecure%20CAPTCHA/Insecure%20CAPTCHA.md) | Low / Medium / High |  ✅ Completed |
+| [SQL Injection](./07.%20SQL%20Injection/SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
+| [Blind SQL Injection](./08.%20Blind%20SQL%20Injection/Blind%20SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
+| [Weak Session IDs](./09.%20Weak%20Session%20IDs/Weak%20Session%20IDs.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
