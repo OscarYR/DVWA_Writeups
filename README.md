@@ -28,6 +28,7 @@ Each folder contains:
 | [File Upload](./5.%20File%20Upload/File%20Upload.md) | Low / Medium / High |  ✅ Completed |
 | [Insecure CAPTCHA](./6.%20Insecure%20CAPTCHA/Insecure%20CAPTCHA.md) | Low / Medium / High |  ✅ Completed |
 | [SQL Injection](./7.%20SQL%20Injection/SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
+| [Blind SQL Injection](./8.%20Blind%20SQL%20Injection/Blind%20SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
