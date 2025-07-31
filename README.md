@@ -32,7 +32,7 @@ Each folder contains:
 | [Weak Session IDs](./09.%20Weak%20Session%20IDs/Weak%20Session%20IDs.md) | Low / Medium / High |  ✅ Completed |
 | [DOM XSS](./10.%20DOM%20XSS/DOM%20XSS.md) | Low / Medium / High |  ✅ Completed |
 | [Reflected XSS](./11.%20Reflected%20XSS/Reflected%20XSS.md) | Low / Medium / High |  ✅ Completed |
-| [Stored XSS](./11.%20Stored%20XSS/Stored%20XSS.md) | Low / Medium / High |  ✅ Completed |
+| [Stored XSS](./12.%20Stored%20XSS/Stored%20XSS.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
