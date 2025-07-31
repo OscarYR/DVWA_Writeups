@@ -30,6 +30,7 @@ Each folder contains:
 | [SQL Injection](./07.%20SQL%20Injection/SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
 | [Blind SQL Injection](./08.%20Blind%20SQL%20Injection/Blind%20SQL%20Injection.md) | Low / Medium / High |  ✅ Completed |
 | [Weak Session IDs](./09.%20Weak%20Session%20IDs/Weak%20Session%20IDs.md) | Low / Medium / High |  ✅ Completed |
+| [DOM XSS](./10.%20DOM%20XSS/DOM%20XSS.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
