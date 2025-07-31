@@ -125,3 +125,33 @@ If we use Time-Based Blind SQLi method and the response did take 5 seconds for u
 
 <img src="./Screenshots/Screenshot17.png" width=80% height=80%><br><br>
 
+If we try inject the `IF(LENGTH(DATABASE())=4,SLEEP(5),0)` query here, we will get a 'MISSING' message but due to the fact that it took 5 seconds for server to reply, the delay means the injected condition was true:
+
+#### Case 1
+
+```SQL
+id=1+AND+IF(LENGTH(DATABASE())=8,SLEEP(5),0)
+```
+
+<img src="./Screenshots/Screenshot17A.png" width=80% height=80%><br>
+
+We know that the condition `LENGTH(DATABASE())=8` is false. So `IF(...)` evaluates to 0, that means no delay and the server replies immediately, which indicates the injected condition is not true.
+<br>
+
+#### Case 2
+
+```SQL
+id=1+AND+IF(LENGTH(DATABASE())=4,SLEEP(5),0)
+```
+
+<img src="./Screenshots/Screenshot17B.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot17C.png" width=80% height=80%><br>
+
+We know that the condition `LENGTH(DATABASE())=4` is true. So `IF(...)` triggers `SLEEP(5)` and cause server pauses 5 seconds before replying. We still get the message "User ID is missing", but the delay means the injected condition was true.
+<br><br>
+
+---
+
+## High Difficulty
+
