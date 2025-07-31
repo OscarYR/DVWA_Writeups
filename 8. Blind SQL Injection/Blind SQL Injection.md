@@ -155,3 +155,37 @@ We know that the condition `LENGTH(DATABASE())=4` is true. So `IF(...)` triggers
 
 ## High Difficulty
 
+The input values are set on a different page like the previous challenge:
+
+<img src="./Screenshots/Screenshot18.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot19.png" width=80% height=80%><br><br>
+
+In this difficulty, no sanitization or escaping is applied, so SQLi is still applicable here:
+
+<img src="./Screenshots/Screenshot20.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot21.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot22.png" width=80% height=80%><br><br>
+
+Looking at the source code here, it introduces a random delay of 2–4 seconds and returns a 404 Not Found status with the 'MISSING' message:
+
+<img src="./Screenshots/Screenshot23.png" width=80% height=80%>
+
+However, because the `$id` value from the cookie is inserted directly into the SQL query inside quotes, we can still craft input like `1' AND IF(ASCII(SUBSTRING(DATABASE(),1,1))=100,SLEEP(5),0) --` and expect the delay if the condition is true. Even though the app adds random noise with `sleep(rand(2,4))`, the injection is still exploitable using timing patterns. We can send multiple requests and average the response times to detect true/false conditions.
+
+---
+
+## Conclusion
+
+Blind SQL Injection is a more subtle but equally powerful variant of SQLi. Even though the application does not directly display query results or error messages, attackers can still extract sensitive information by carefully analyzing the application's behavior (Boolean logic) or its response time (Time-based delays). In this challenge, we demonstrated how to exploit Blind SQLi step-by-step across increasing difficulty levels such as using conditional logic, delay functions like SLEEP(), and pattern-matching techniques to retrieve data from the backend database even without visual output.
+
+---
+
+### Skills Applied:
+- Identifying and exploiting Boolean-based Blind SQLi
+- Performing Time-based Blind SQLi using delay logic (SLEEP(n))
+- Conducting manual payload crafting and injection using browser and Burp Suite
+- Bypassing front-end restrictions (e.g., dropdowns, cookies) for injection
+- Understanding and analyzing server behavior and response timing
