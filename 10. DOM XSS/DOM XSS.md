@@ -82,6 +82,8 @@ As a general idea, the cookie will be sent to the server and grabbed by attacker
 
 <img src="./Screenshots/Screenshot13.png" width=80% height=80%><br><br>
 
+---
+
 ## Medium Difficulty
 
 In Medium difficulty, the code will now check if there are any input that start with `<script`, if found, it will block and set the URL back to default:
@@ -111,6 +113,8 @@ Before we inject the script, we have to add a `</select>` here to break out the 
 <img src="./Screenshots/Screenshot21.png" width=80% height=80%>
 
 <img src="./Screenshots/Screenshot22.png" width=80% height=80%><br><br>
+
+---
 
 ## High Difficulty
 
