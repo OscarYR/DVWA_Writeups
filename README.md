@@ -35,6 +35,7 @@ Each folder contains:
 | [Stored XSS](./12.%20Stored%20XSS/Stored%20XSS.md) | Low / Medium / High |  ✅ Completed |
 | [CSP Bypass](./13.%20CSP%20Bypass/CSP%20Bypass.md) | Low / Medium / High |  ✅ Completed |
 | [JavaScript](./14.%20JavaScript/JavaScript.md) | Low / Medium / High |  ✅ Completed |
+| [Authentication Bypass](./15.%20Authentication%20Bypass/Authentication%20Bypass.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
