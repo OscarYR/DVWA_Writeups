@@ -33,6 +33,7 @@ Each folder contains:
 | [DOM XSS](./10.%20DOM%20XSS/DOM%20XSS.md) | Low / Medium / High |  ✅ Completed |
 | [Reflected XSS](./11.%20Reflected%20XSS/Reflected%20XSS.md) | Low / Medium / High |  ✅ Completed |
 | [Stored XSS](./12.%20Stored%20XSS/Stored%20XSS.md) | Low / Medium / High |  ✅ Completed |
+| [CSP Bypass](./13.%20CSP%20Bypass/CSP%20Bypass.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
