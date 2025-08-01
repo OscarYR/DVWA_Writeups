@@ -34,6 +34,7 @@ Each folder contains:
 | [Reflected XSS](./11.%20Reflected%20XSS/Reflected%20XSS.md) | Low / Medium / High |  ✅ Completed |
 | [Stored XSS](./12.%20Stored%20XSS/Stored%20XSS.md) | Low / Medium / High |  ✅ Completed |
 | [CSP Bypass](./13.%20CSP%20Bypass/CSP%20Bypass.md) | Low / Medium / High |  ✅ Completed |
+| [JavaScript](./13.%20JavaScript/JavaScript.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
