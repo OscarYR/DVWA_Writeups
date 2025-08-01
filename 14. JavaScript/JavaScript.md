@@ -1,4 +1,4 @@
-## JavaScript
+# JavaScript
 
 JavaScript is a client-side scripting language used to make web pages interactive. It runs in the user's web browser and can control elements on the page like:
 - Form validation
