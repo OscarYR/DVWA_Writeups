@@ -12,7 +12,7 @@ You're free to share and adapt the content for non-commercial use, with proper a
 All images (`.png`, `.jpg`, etc.) uploaded in the write-up folders are provided for demonstration purposes.  
 **Do not reuse them for commercial or publishing purposes**.
 
-## ⚙️ Scripts & Setup Snippets (if any)
+## ⚙️ Scripts & Setup Snippets
 Shell commands or basic config snippets are provided under the **MIT License**:
 
 ## **MIT License**
