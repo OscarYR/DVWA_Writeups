@@ -3,18 +3,17 @@
 This repository contains a series of write-ups for [DVWA (Damn Vulnerable Web Application)](https://github.com/digininja/DVWA), a purposefully insecure web application used to practice and learn various web security vulnerabilities.
 
 These walkthroughs were done in a lab environment using:
-- 🖥️ **Attacker**: Kali Linux
-- 🧪 **Victim**: DVWA in Metasploitable 2
-- 🔧 **Tools**: Burp Suite, Hydra, curl, Firefox Developer Tools
+- Kali Linux
+- Both self hosted DVWA & DVWA in Metasploitable 2
 
 ---
 
 ## 💡 Covered Vulnerabilities
 
-Each folder contains:
+Each wrietups contains:
 - Step-by-step exploitation
-- Tool usage (Burp Suite, manual, etc.)
-- Screenshots (if applicable)
+- Tool usage
+- Screenshots
 - Observations across **Low**, **Medium**, and **High** difficulty levels
 - Skills and techniques learned
 
@@ -38,6 +37,7 @@ Each folder contains:
 | [Authentication Bypass](./15.%20Authentication%20Bypass/Authentication%20Bypass.md) | Low / Medium / High |  ✅ Completed |
 | [Open HTTP Redirect](./16.%20Open%20HTTP%20Redirect/Open%20HTTP%20Redirect.md) | Low / Medium / High |  ✅ Completed |
 | [Cryptography Problems](./17.%20Cryptography%20Problems/Cryptography%20Problems.md) | Low / Medium / High |  ✅ Completed |
+| [API Security](./18.%20API%20Security/API%20Security.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
