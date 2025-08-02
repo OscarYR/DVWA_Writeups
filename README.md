@@ -10,7 +10,7 @@ These walkthroughs were done in a lab environment using:
 
 ## 💡 Covered Vulnerabilities
 
-Each wrietups contains:
+Each writeup contains:
 - Step-by-step exploitation
 - Tool usage
 - Screenshots
