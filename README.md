@@ -4,7 +4,7 @@ This repository contains a series of write-ups for [DVWA (Damn Vulnerable Web Ap
 
 These walkthroughs were done in a lab environment using:
 - Kali Linux
-- Both self hosted DVWA & DVWA in Metasploitable 2
+- Both self-hosted DVWA & DVWA in Metasploitable 2
 
 ---
 
@@ -43,11 +43,11 @@ Each wrietups contains:
 
 ## 🧠 Skills Learned
 
-- Web vulnerability identification and exploitation
-- Use of **Burp Suite Intruder** for brute forcing
-- Analysis of HTTP request/response lengths and keyword patterns
-- Credential harvesting through response analysis
-- Understanding impact of difficulty levels (filtering, delays, etc.)
+- Exploitation of common web vulnerabilities (e.g., SQLi, XSS, CSRF, File Inclusion) across different difficulty levels with hands-on testing
+- Manual and automated testing using Burp Suite, including request manipulation, repeater, intruder, and proxy tools
+- Client-side and server-side analysis using browser developer tools and JavaScript debugging to uncover hidden logic or bypasses
+- Enumeration and abuse of misconfigured APIs and cryptographic implementations, including IDORs, insecure JWTs, and padding oracles
+- Practical understanding of real-world attack chains, from reconnaissance to privilege escalation and persistence
 
 ---
 
