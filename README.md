@@ -1,6 +1,6 @@
 # DVWA Web Application Write-Ups
 
-This repository contains a series of write-ups for [DVWA (Damn Vulnerable Web Application)](https://github.com/digininja/DVWA), a purposefully insecure web application used to practice and learn various web security vulnerabilities.
+This repository contains a series of my writeups for [DVWA (Damn Vulnerable Web Application)](https://github.com/digininja/DVWA), a purposefully insecure web application used to practice and learn various web security vulnerabilities.
 
 These walkthroughs were done in a lab environment using:
 - Kali Linux
@@ -19,7 +19,7 @@ Each writeup contains:
 
 ---
 
-### 📁 Write-Ups So Far
+### 📁 Writeups So Far
 | Challenges        | Difficulty | Status  |
 |----------------|------------|---------|
 | [Brute Force](./01.%20Brute%20Force/Brute%20Force.md) | Low / Medium / High | ✅ Completed |
