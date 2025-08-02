@@ -17,6 +17,8 @@ Each wrietups contains:
 - Observations across **Low**, **Medium**, and **High** difficulty levels
 - Skills and techniques learned
 
+---
+
 ### 📁 Write-Ups So Far
 | Challenges        | Difficulty | Status  |
 |----------------|------------|---------|
