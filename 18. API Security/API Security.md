@@ -133,5 +133,164 @@ Now we manage to crack the passwords of those users, which are `letmein`, `TonyH
 
 <img src="./Screenshots/Screenshot16.png" width=80% height=80%><br><br>
 
+---
 
+## Medium Difficulty
 
+**For those who have the Setup problem**
+
+Before proceed to start the Medium difficulty challenge, remember to change the `Medium.php` URL just like how we did for the `Low.php` if you have encountered the same problem. (`get_user` & `update_name function`):
+
+<img src="./Screenshots/Screenshot17.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot18.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot19.png" width=80% height=80%><br><br>
+
+### Wrong Configuration
+
+<img src="./Screenshots/Screenshot20.png" width=80% height=80%><br><br>
+
+### Correct Configuration
+
+The page should load with the ‘morph’ user in the input field and its details:
+
+<img src="./Screenshots/Screenshot21.png" width=80% height=80%><br><br>
+
+### Solution
+
+In Medium difficulty, we need to elevate the user privilege to admin. We can use Burp Suite to intercept the request and see how it goes. From the PUT request, it took the name from the input field and return with its ID and privilege level. What if we try to add a level value with 0 (admin) in the PUT request then forward it:
+
+<img src="./Screenshots/Screenshot22.png" width=80% height=80%><br><br>
+
+We can see that in the Repeater, if adding another attributes `level` with value 0 on the request side, the response do actually update its level to 0 as well. So, what we need to do here is first intercept the PUT request and modifying the attributes before forwarding the request:
+
+<img src="./Screenshots/Screenshot23.png" width=80% height=80%><br><br>
+
+With Burp Suite proxy on, click on submit from the DVWA page and intercept the request:
+
+<img src="./Screenshots/Screenshot24.png" width=80% height=80%><br><br>
+
+Add a `level` attribute with 0 as the value, which is the admin privilege:
+
+<img src="./Screenshots/Screenshot25.png" width=80% height=80%><br><br>
+
+Click forward in the Burp Suite and we have successfully elevated the privilege:
+
+<img src="./Screenshots/Screenshot26.png" width=80% height=80%><br><br>
+
+---
+
+## High Difficulty
+
+In High difficulty, we are given a OpenAPI document which is the `openapi.yml` file. We need to test the health functions inside the file and see if we can find any vulnerability:
+
+<img src="./Screenshots/Screenshot27.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot28.png" width=80% height=80%><br><br>
+
+Here I installed the `OpenAPI Parser` extension in Burp Suite to list out the API details easily:
+
+<img src="./Screenshots/Screenshot29.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot30.png" width=80% height=80%><br><br>
+
+### Echo Function
+
+Let’s try the echo function. First browse to the function and intercept the request, then send to repeater:
+
+<img src="./Screenshots/Screenshot31.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot32.png" width=80% height=80%><br><br>
+
+It says 404 Not Found, so what we can do here is change the request method to POST:
+
+<img src="./Screenshots/Screenshot33.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot34.png" width=80% height=80%><br><br>
+
+Now it says ‘words not specified’. We need to include the word `Hello World` that we saw in the echo calls body:
+
+<img src="./Screenshots/Screenshot35.png" width=80% height=80%><br><br>
+
+Remember to convert it to JSON format:
+
+<img src="./Screenshots/Screenshot36.png" width=80% height=80%><br><br>
+
+Now we have successfully got the reply:
+
+<img src="./Screenshots/Screenshot37.png" width=80% height=80%><br><br>
+
+We can try to insert a single quote in the body, hopefully can break the SQL syntax and get back errors to verify SQL injection vulnerability:
+
+<img src="./Screenshots/Screenshot38.png" width=80% height=80%>
+
+Unfortunately, it does not.<br><br>
+
+### Connectivity Function
+
+Next, let’s try the connectivity function:
+
+<img src="./Screenshots/Screenshot39.png" width=80% height=80%><br><br>
+
+Change the URL from `echo` to `connectivity` in the Request body and we are good to go for trials and errors. Here we get a target not specified error as we need to specify a target in the JSON body:
+
+<img src="./Screenshots/Screenshot40.png" width=80% height=80%><br><br>
+
+Testing with `target:localhost`, we are able to get a HTTP 200 OK status:
+
+<img src="./Screenshots/Screenshot41.png" width=80% height=80%><br><br>
+
+Now, we host a HTTP server to verify if there is vulnerability when trying to inject command:
+
+<img src="./Screenshots/Screenshot42.png" width=80% height=80%><br><br>
+
+Using curl command, we are able to communicate with our HTTP server:
+
+<img src="./Screenshots/Screenshot43.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot44.png" width=80% height=80%><br><br>
+
+let’s try injecting some command:
+
+#### `whoami`
+
+<img src="./Screenshots/Screenshot45.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot46.png" width=80% height=80%><br><br>
+
+#### `ls`
+
+<img src="./Screenshots/Screenshot47.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot48.png" width=80% height=80%><br><br>
+
+#### `pwd`
+
+<img src="./Screenshots/Screenshot49.png" width=80% height=80%>
+
+<img src="./Screenshots/Screenshot50.png" width=80% height=80%><br><br>
+
+This verifies that we are able to execute commands and export the results to our own local web server, so we have found the vulnerability in `connectivity` function API calls.
+
+---
+
+## Conclusion
+
+This challenge highlighted the importance of securing APIs at all levels but not just the frontend.
+
+- In Low difficulty, we exploited API versioning to access outdated and more sensitive endpoints that exposed hashed passwords.
+- In Medium difficulty, we demonstrated an insecure API that didn’t enforce server-side access controls, allowing us to escalate privileges by modifying the request body directly.
+- In High difficulty, we used an OpenAPI specification to identify and test available endpoints. We discovered that the connectivity function was vulnerable to command injection, allowing full remote code execution via crafted API payloads.
+
+APIs often handle core application logic and sensitive operations, assuming they are hidden from users is a dangerous mindset. Attackers can analyze and manipulate API traffic directly, so strong validation, authorization, and input sanitization are important.
+
+---
+
+### Skills Applied:
+
+- API enumeration via version control abuse (v1 vs v2 endpoints)
+- Editing raw HTTP requests using Burp Suite to modify or inject JSON payloads
+- Privilege escalation via unvalidated input in PUT/POST requests
+- Parsing and leveraging OpenAPI (Swagger) documentation to identify hidden or undocumented endpoints
+- Command injection via API input fields, validated by triggering external callbacks with a custom HTTP listener
