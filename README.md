@@ -36,6 +36,7 @@ Each folder contains:
 | [CSP Bypass](./13.%20CSP%20Bypass/CSP%20Bypass.md) | Low / Medium / High |  ✅ Completed |
 | [JavaScript](./14.%20JavaScript/JavaScript.md) | Low / Medium / High |  ✅ Completed |
 | [Authentication Bypass](./15.%20Authentication%20Bypass/Authentication%20Bypass.md) | Low / Medium / High |  ✅ Completed |
+| [Open HTTP Redirect](./16.%20Open%20HTTP%20Redirect/Open%20HTTP%20Redirect.md) | Low / Medium / High |  ✅ Completed |
 
 ---
 
