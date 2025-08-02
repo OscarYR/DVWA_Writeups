@@ -55,7 +55,7 @@ Each writeup contains:
 
 ## 📚 Resources
 
-- 🔗 [DVWA Challenge Guide (CryptoCat)]([https://youtu.be/GmWQ1VIjd2U](https://youtube.com/playlist?list=PLHUKi1UlEgOJLPSFZaFKMoexpM6qhOb4Q&si=HxL407LZ2C9L37AX))
+- 🔗 [DVWA Challenge Guide (CryptoCat)](https://youtu.be/GmWQ1VIjd2U](https://youtube.com/playlist?list=PLHUKi1UlEgOJLPSFZaFKMoexpM6qhOb4Q&si=HxL407LZ2C9L37AX))
 
 ---
 
